@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабороторна робота №3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Лабораторна робота №3. JavaScript</h1>
+        <h2>Виконав студент групи КН-31 Погорілий Данило</h2>
+    </header>
+    <main>
+        <div class="text">
+            <h2>Завдання на лабораторну роботу</h2>
+            <p>
+                1. У поле вводу вводиться країна і натискається Enter. При натисканні на
+                Enter зробіть так, щоб введені країни записувалися в абзац під поле вводу через
+                кому. Тобто по кожному натискання Enter в абзац будуть додаватися все нові і
+                нові країни.
+            </p>
+
+            <p>
+                2. Дана таблиця з числами. При натисканні на кнопку знайдіть комірку, в
+                якій зберігається максимальне число, і зробіть її фон червоним.
+            </p>
+        </div>
+        <div class="program">
+            <h2>Завдання 1</h2>
+            <form action="javascript:void(0);" method="get" id="countryForm">
+                <input type="text" id="countryInput">
+            </form>
+            <p id="countriesList"></p>
+            <h2>Завдання 2</h2>
+            <div class="table-container">
+                <table id="numberTable">
+                    <tr>
+                        <td id="cell00"></td>
+                        <td id="cell01"></td>
+                        <td id="cell02"></td>
+                        <td id="cell03"></td>
+                        <td id="cell04"></td>
+                    </tr>
+                    <tr>
+                        <td id="cell10"></td>
+                        <td id="cell11"></td>
+                        <td id="cell12"></td>
+                        <td id="cell13"></td>
+                        <td id="cell14"></td>
+                    </tr>
+                    <tr>
+                        <td id="cell20"></td>
+                        <td id="cell21"></td>
+                        <td id="cell22"></td>
+                        <td id="cell23"></td>
+                        <td id="cell24"></td>
+                    </tr>
+                </table>
+                <button id="updateTableButton">Update Table</button>
+                <button id="highlightMaxButton">Highlight Max</button>
+            </div>
+
+        </div>
+
+        </div>
+
+    </main>
+    <script src="script1.js"></script>
+    <script src="script2.js"></script>
+</body>
+
+</html>
